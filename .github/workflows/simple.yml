@@ -1,6 +1,9 @@
 name: Shell Commands
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   run-shell-command:
@@ -11,3 +14,4 @@ jobs:
       - name: multiline script
         run: |
           node -v
+          npm -v
